@@ -30,8 +30,20 @@ nav a {
 
 .section {
   padding: 2rem;
-  max-width: 800px;
+  max-width: 900px;   /* ancho de lectura cómodo */
   margin: auto;
+}
+
+/* 🔹 Justificación del texto */
+p, li {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* 🔹 Mejor legibilidad en listas */
+ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 h1, h2, h3 {
@@ -71,12 +83,17 @@ input, textarea {
   font-family: inherit;
 }
 
+/* 🔹 Footer centrado vertical y horizontal */
 footer {
   background-color: #003366;
   color: white;
+  display: flex;             /* activa flexbox */
+  justify-content: center;   /* centra horizontal */
+  align-items: center;       /* centra vertical */
+  min-height: 80px;          /* asegura altura */
   text-align: center;
-  padding: 1rem;
   margin-top: 2rem;
+  padding: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -89,8 +106,6 @@ footer {
     margin: 0.5rem 0;
   }
 }
-
-
 
 .language-switcher {
   margin-left: auto;
@@ -110,8 +125,6 @@ footer {
   text-decoration: underline;
 }
 
-
-
 .header {
     height: 60vh;
     background-image: 
@@ -123,7 +136,6 @@ footer {
     background-size: cover;
     background-position: bottom;
     position: relative;
-
     clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
 }
 
@@ -146,7 +158,6 @@ footer {
 .heading-primary {
     color: #fff;
     text-transform: uppercase;
-
     backface-visibility: hidden;
     margin-bottom: 30px;
 }
@@ -189,5 +200,5 @@ footer {
 .btn-white {
     background-color: #fff;
     color: #777;
-  font-size: 14px;
+    font-size: 14px;
 }
