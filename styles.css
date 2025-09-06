@@ -29,18 +29,24 @@ nav a {
 }
 
 .section {
-  padding: 2rem;
-  max-width: 900px;   /* ancho de lectura cómodo */
+  padding: 3rem 1.5rem;   /* Aumenté el padding para dar más espacio */
+  max-width: 900px;
   margin: auto;
+  line-height: 1.8; /* Aumenté el interlineado para mejorar la legibilidad */
+  text-align: justify;  /* Justificación de texto */
 }
 
-/* 🔹 Justificación del texto */
+h1, h2, h3 {
+  color: #002244;
+  margin-bottom: 1rem; /* Espaciado debajo de los títulos */
+}
+
 p, li {
   text-align: justify;
   text-justify: inter-word;
+  margin-bottom: 1rem; /* Espaciado entre párrafos y listas */
 }
 
-/* 🔹 Mejor legibilidad en listas */
 ul {
   padding-left: 1.5rem;
   margin-bottom: 1.5rem;
@@ -83,14 +89,13 @@ input, textarea {
   font-family: inherit;
 }
 
-/* 🔹 Footer centrado vertical y horizontal */
 footer {
   background-color: #003366;
   color: white;
-  display: flex;             /* activa flexbox */
-  justify-content: center;   /* centra horizontal */
-  align-items: center;       /* centra vertical */
-  min-height: 80px;          /* asegura altura */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
   text-align: center;
   margin-top: 2rem;
   padding: 1rem;
@@ -126,79 +131,79 @@ footer {
 }
 
 .header {
-    height: 60vh;
-    background-image: 
+  height: 60vh;
+  background-image: 
     linear-gradient(to right bottom, 
-     rgba(6, 45, 56, 0.45),
-     rgba(5, 44, 99, 0.45)),
-     url('./esta.jpg');
-    text-shadow: 4px 4px #000000;
-    background-size: cover;
-    background-position: bottom;
-    position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
+      rgba(6, 45, 56, 0.45),
+      rgba(5, 44, 99, 0.45)),
+    url('./esta.jpg');
+  text-shadow: 4px 4px #000000;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
 }
 
 .brand-box {
-    position: absolute;
-    top: 40px;
-    left: 40px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
 }
 
 .brand { font-size: 20px; }
 
 .text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .heading-primary {
-    color: #fff;
-    text-transform: uppercase;
-    backface-visibility: hidden;
-    margin-bottom: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 30px;
 }
 
 .heading-primary-main {
-    display: block;
-    font-size: 26px;
-    font-weight: 400;
-    letter-spacing: 5px;
+  display: block;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 5px;
 }
 
 .heading-primary-sub {
-    display: block;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 7.4px;
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 7.4px;
 }
 
 .btn:link,
 .btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-    border-radius: 100px;
-    transition: all .2s;
-    position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;
+  position: relative;
 }
 
 .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .btn-white {
-    background-color: #fff;
-    color: #777;
-    font-size: 14px;
+  background-color: #fff;
+  color: #777;
+  font-size: 14px;
 }
