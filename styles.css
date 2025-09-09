@@ -1,12 +1,14 @@
+/* Tipografía y cuerpo */
 body {
   font-family: 'Libre Baskerville', serif;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
   color: #003366;
-  line-height: 1.6;
+  line-height: 1.8; /* Mejor interlineado para lectura */
 }
 
+/* Encabezado principal */
 header {
   background-color: #003366;
   color: white;
@@ -28,34 +30,40 @@ nav a {
   font-weight: bold;
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Secciones */
 .section {
-  padding: 3rem 1.5rem;   /* Aumenté el padding para dar más espacio */
+  padding: 3rem 2rem;   /* Más espacio para respirar */
   max-width: 900px;
   margin: auto;
-  line-height: 1.8; /* Aumenté el interlineado para mejorar la legibilidad */
-  text-align: justify;  /* Justificación de texto */
+  line-height: 1.9; /* Muy buena legibilidad */
+  text-align: justify;
 }
 
-h1, h2, h3 {
+/* Títulos */
+h1, h2, h3, h4 {
   color: #002244;
-  margin-bottom: 1rem; /* Espaciado debajo de los títulos */
+  margin-bottom: 1.5rem; /* Separación mayor entre títulos y contenido */
+  line-height: 1.3;
 }
 
+/* Párrafos y listas */
 p, li {
   text-align: justify;
   text-justify: inter-word;
-  margin-bottom: 1rem; /* Espaciado entre párrafos y listas */
+  margin-bottom: 1rem;
+  line-height: 1.7;
 }
 
 ul {
-  padding-left: 1.5rem;
+  padding-left: 2rem;  /* Sangría adecuada */
   margin-bottom: 1.5rem;
 }
 
-h1, h2, h3 {
-  color: #002244;
-}
-
+/* Botones */
 .buttons {
   margin-top: 1rem;
 }
@@ -69,6 +77,7 @@ h1, h2, h3 {
   background-color: #cccccc;
   color: #003366;
   font-weight: bold;
+  transition: all 0.2s;
 }
 
 .btn.primary {
@@ -76,6 +85,17 @@ h1, h2, h3 {
   color: white;
 }
 
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+/* Formulario */
 form {
   display: flex;
   flex-direction: column;
@@ -89,6 +109,7 @@ input, textarea {
   font-family: inherit;
 }
 
+/* Footer */
 footer {
   background-color: #003366;
   color: white;
@@ -101,6 +122,7 @@ footer {
   padding: 1rem;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -112,6 +134,7 @@ footer {
   }
 }
 
+/* Language switcher */
 .language-switcher {
   margin-left: auto;
   display: flex;
@@ -130,27 +153,18 @@ footer {
   text-decoration: underline;
 }
 
+/* Header con imagen y gradiente */
 .header {
   height: 60vh;
   background-image: 
-    linear-gradient(to right bottom, 
-      rgba(6, 45, 56, 0.45),
-      rgba(5, 44, 99, 0.45)),
+    linear-gradient(to right bottom, rgba(6, 45, 56, 0.45), rgba(5, 44, 99, 0.45)),
     url('./esta.jpg');
-  text-shadow: 4px 4px #000000;
   background-size: cover;
   background-position: bottom;
+  text-shadow: 4px 4px #000000;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
 }
-
-.brand-box {
-  position: absolute;
-  top: 40px;
-  left: 40px;
-}
-
-.brand { font-size: 20px; }
 
 .text-box {
   position: absolute;
@@ -181,27 +195,7 @@ footer {
   letter-spacing: 7.4px;
 }
 
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 10px 20px;
-  display: inline-block;
-  border-radius: 100px;
-  transition: all .2s;
-  position: relative;
-}
-
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
+/* Botones adicionales */
 .btn-white {
   background-color: #fff;
   color: #777;
