@@ -63,6 +63,23 @@ ul {
   margin-bottom: 1.5rem;
 }
 
+/* Estilos especiales para la lista de hitos */
+ul.timeline li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+ul.timeline li:last-child {
+  border-bottom: none; /* Quitar la línea en el último elemento */
+}
+
+ul.timeline li b {
+  color: #003366;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
 /* Botones */
 .buttons {
   margin-top: 1rem;
